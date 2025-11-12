@@ -499,7 +499,9 @@
             const css = document.getElementById('css-editor').value;
             document.getElementById('custom-styles').textContent = css;
             
-            // Add a pulse animation to show changes were applied
+            // Scroll up and add a pulse animation to show changes were applied
+            window.scrollTo(0, 0);
+
             const boxes = document.querySelectorAll('.box');
             boxes.forEach(box => {
                 box.style.animation = 'pulse 0.5s';
